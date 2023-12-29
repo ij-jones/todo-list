@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #edeef0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px; /* This adds space between the todo and the timer */
+  margin-top: 2rem; /* Adjust as needed */
+  flex-wrap: wrap; /* Allows items to wrap in smaller screens */
+  text-align: center;
+}
+
+h1 {
+  color: #000;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  background: #fff;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 40px;
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  width: 300px;
+  background: transparent;
+  background-color: #edeef0;
+  padding: 15px;
+  font-weight: 14px;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.todo-input::placeholder {
+  color: #000;
+}
+
+.todo-btn {
+  border: none;
+  outline: none;
+  padding: 15px;
+  background: #ff5945;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 30px;
+}
+
+.todo-btn:hover {
+  background-color: #e6483f;
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 40px;
+  margin-bottom: 1rem;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+}
+
+.completed {
+  color: #c5aeff;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+}
+
+/* Timer */
+
+.pomodoro-timer-container {
+  background: #fff;
+  margin-top: 6rem;
+  padding: 2rem;
+  border-radius: 40px;
+}
+
+.pomodoro-timer-display {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.timer-btn {
+  margin: 0 5px;
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #ff5945;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.timer-btn:hover {
+  background-color: #e6483f;
+}
+
